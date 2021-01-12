@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- 1 CSS Flexbox: Use display: flex to Position Two Boxes
+   -->
+<!-- Placing the CSS property display: flex; on an element allows you to use other flex properties to build a responsive page. -->
+   <!-- Add the CSS property display to #box-container and set its value to flex. -->
+   <style>
+    #box-container {
+      height: 500px;
+  
+    }
+  
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+<!-- 2 CSS Flexbox: Add Flex Superpowers to the Tweet Embed
+-->
+    <!-- Add the CSS property display: flex to all of the following items - note that the selectors are already set up in the CSS:
+
+header, the header's .profile-name, the header's .follow-btn, the header's h3 and h4, the footer, and the footer's .stats. -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+
+  }
+  header .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+  }
+  header .profile-name {
+
+    margin-left: 10px;
+  }
+  header .follow-btn {
+
+    margin: 0 0 0 auto;
+  }
+  header .follow-btn button {
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  header h3, header h4 {
+
+    margin: 0;
+  }
+  #inner p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #inner hr {
+    margin: 20px 0;
+    border-style: solid;
+    opacity: 0.1;
+  }
+  footer {
+
+  }
+  footer .stats {
+
+    font-size: 15px;
+  }
+  footer .stats strong {
+    font-size: 18px;
+  }
+  footer .stats .likes {
+    margin-left: 10px;
+  }
+  footer .cta {
+    margin-left: auto;
+  }
+  footer .cta button {
+    border: 0;
+    background: transparent;
+  }
+</style>
+<header>
+  <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+  <div class="profile-name">
+    <h3>Quincy Larson</h3>
+    <h4>@ossia</h4>
+  </div>
+  <div class="follow-btn">
+    <button>Follow</button>
+  </div>
+</header>
+<div id="inner">
+  <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+  <span class="date">1:32 PM - 12 Jan 2018</span>
+  <hr>
+</div>
+<footer>
+  <div class="stats">
+    <div class="Retweets">
+      <strong>107</strong> Retweets
+    </div>
+    <div class="likes">
+      <strong>431</strong> Likes
+    </div>
+  </div>
+  <div class="cta">
+    <button class="share-btn">Share</button>
+    <button class="retweet-btn">Retweet</button>
+    <button class="like-btn">Like</button>
+  </div>
+</footer>
+<!-- 3 CSS Flexbox: Use the flex-direction Property to Make a Row
+-->
+<!-- Add the CSS property flex-direction to the #box-container element, and give it a value of row-reverse. -->
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!-- 4 CSS Flexbox: Apply the flex-direction Property to Create Rows in the Tweet Embed
+ -->
+ <!-- Add the CSS property flex-direction to both the header and footer and set the value to row. -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+  
+    }
+    header .profile-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+    header .profile-name {
+      display: flex;
+      margin-left: 10px;
+    }
+    header .follow-btn {
+      display: flex;
+      margin: 0 0 0 auto;
+    }
+    header .follow-btn button {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    header h3, header h4 {
+      display: flex;
+      margin: 0;
+    }
+    #inner p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    #inner hr {
+      margin: 20px 0;
+      border-style: solid;
+      opacity: 0.1;
+    }
+    footer {
+      display: flex;
+  
+    }
+    footer .stats {
+      display: flex;
+      font-size: 15px;
+    }
+    footer .stats strong {
+      font-size: 18px;
+    }
+    footer .stats .likes {
+      margin-left: 10px;
+    }
+    footer .cta {
+      margin-left: auto;
+    }
+    footer .cta button {
+      border: 0;
+      background: transparent;
+    }
+  </style>
+  <header>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+    <div class="profile-name">
+      <h3>Quincy Larson</h3>
+      <h4>@ossia</h4>
+    </div>
+    <div class="follow-btn">
+      <button>Follow</button>
+    </div>
+  </header>
+  <div id="inner">
+    <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+    <span class="date">1:32 PM - 12 Jan 2018</span>
+    <hr>
+  </div>
+  <footer>
+    <div class="stats">
+      <div class="Retweets">
+        <strong>107</strong> Retweets
+      </div>
+      <div class="likes">
+        <strong>431</strong> Likes
+      </div>
+    </div>
+    <div class="cta">
+      <button class="share-btn">Share</button>
+      <button class="retweet-btn">Retweet</button>
+      <button class="like-btn">Like</button>
+    </div>
+  </footer>
+
+  <!-- 5 CSS Flexbox: Use the flex-direction Property to Make a Column
+-->
+
+<!-- Add the CSS property flex-direction to the #box-container element, and give it a value of column. -->
+
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 50%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+<!-- 6 CSS Flexbox: Apply the flex-direction Property to Create a Column in the Tweet Embed
+-->
+<!-- Add the CSS property flex-direction to the header's .profile-name element and set the value to column.
+ -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      display: flex;
+      flex-direction: row;
+    }
+    header .profile-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+    header .profile-name {
+      display: flex;
+  
+      margin-left: 10px;
+    }
+    header .follow-btn {
+      display: flex;
+      margin: 0 0 0 auto;
+    }
+    header .follow-btn button {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    header h3, header h4 {
+      display: flex;
+      margin: 0;
+    }
+    #inner p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    #inner hr {
+      margin: 20px 0;
+      border-style: solid;
+      opacity: 0.1;
+    }
+    footer .stats {
+      display: flex;
+      font-size: 15px;
+    }
+    footer .stats strong {
+      font-size: 18px;
+    }
+    footer .stats .likes {
+      margin-left: 10px;
+    }
+    footer .cta {
+      margin-left: auto;
+    }
+    footer .cta button {
+      border: 0;
+      background: transparent;
+    }
+  </style>
+  <header>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+    <div class="profile-name">
+      <h3>Quincy Larson</h3>
+      <h4>@ossia</h4>
+    </div>
+    <div class="follow-btn">
+      <button>Follow</button>
+    </div>
+  </header>
+  <div id="inner">
+    <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+    <span class="date">1:32 PM - 12 Jan 2018</span>
+    <hr>
+  </div>
+  <footer>
+    <div class="stats">
+      <div class="Retweets">
+        <strong>107</strong> Retweets
+      </div>
+      <div class="likes">
+        <strong>431</strong> Likes
+      </div>
+    </div>
+    <div class="cta">
+      <button class="share-btn">Share</button>
+      <button class="retweet-btn">Retweet</button>
+      <button class="like-btn">Like</button>
+    </div>
+  </footer>
+
+
+<!-- 7 CSS Flexbox: Align Elements Using the justify-content Property
+-->
+<!-- An example helps show this property in action. Add the CSS property justify-content to the #box-container element, and give it a value of center.
+
+Bonus
+Try the other options for the justify-content property in the code editor to see their differences. But note that a value of center is the only one that will pass this challenge. -->
+<style>
+    #box-container {
+      background: gray;
+      display: flex;
+      height: 500px;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 25%;
+      height: 100%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 25%;
+      height: 100%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!-- 8 CSS Flexbox: Use the justify-content Property in the Tweet Embed
+-->
+<!-- Add the CSS property justify-content to the header's .profile-name element and set the value to any of the options from the last challenge.
+ -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      display: flex;
+      flex-direction: row;
+    }
+    header .profile-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+    header .profile-name {
+      display: flex;
+      flex-direction: column;
+  
+      margin-left: 10px;
+    }
+    header .follow-btn {
+      display: flex;
+      margin: 0 0 0 auto;
+    }
+    header .follow-btn button {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    header h3, header h4 {
+      display: flex;
+      margin: 0;
+    }
+    #inner p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    #inner hr {
+      margin: 20px 0;
+      border-style: solid;
+      opacity: 0.1;
+    }
+    footer .stats {
+      display: flex;
+      font-size: 15px;
+    }
+    footer .stats strong {
+      font-size: 18px;
+    }
+    footer .stats .likes {
+      margin-left: 10px;
+    }
+    footer .cta {
+      margin-left: auto;
+    }
+    footer .cta button {
+      border: 0;
+      background: transparent;
+    }
+  </style>
+  <header>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+    <div class="profile-name">
+      <h3>Quincy Larson</h3>
+      <h4>@ossia</h4>
+    </div>
+    <div class="follow-btn">
+      <button>Follow</button>
+    </div>
+  </header>
+  <div id="inner">
+    <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+    <span class="date">1:32 PM - 12 Jan 2018</span>
+    <hr>
+  </div>
+  <footer>
+    <div class="stats">
+      <div class="Retweets">
+        <strong>107</strong> Retweets
+      </div>
+      <div class="likes">
+        <strong>431</strong> Likes
+      </div>
+    </div>
+    <div class="cta">
+      <button class="share-btn">Share</button>
+      <button class="retweet-btn">Retweet</button>
+      <button class="like-btn">Like</button>
+    </div>
+  </footer>
+
+  <!-- 9 CSS Flexbox: Align Elements Using the align-items Property
+-->
+<!-- An example helps show this property in action. Add the CSS property align-items to the #box-container element, and give it a value of center.
+
+Bonus
+Try the other options for the align-items property in the code editor to see their differences. But note that a value of center is the only one that will pass this challenge.
+ -->
+ <style>
+    #box-container {
+      background: gray;
+      display: flex;
+      height: 500px;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 200px;
+      font-size: 24px;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 200px;
+      font-size: 18px;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"><p>Hello</p></div>
+    <div id="box-2"><p>Goodbye</p></div>
+  </div>
+
+  <!-- 10 CSS Flexbox: Use the align-items Property in the Tweet Embed
+-->
+<!-- Add the CSS property align-items to the header's .follow-btn element. Set the value to center.
+ -->
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      display: flex;
+      flex-direction: row;
+    }
+    header .profile-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+    header .profile-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10px;
+    }
+    header .follow-btn {
+      display: flex;
+  
+      margin: 0 0 0 auto;
+    }
+    header .follow-btn button {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    header h3, header h4 {
+      display: flex;
+      margin: 0;
+    }
+    #inner p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    #inner hr {
+      margin: 20px 0;
+      border-style: solid;
+      opacity: 0.1;
+    }
+    footer .stats {
+      display: flex;
+      font-size: 15px;
+    }
+    footer .stats strong {
+      font-size: 18px;
+    }
+    footer .stats .likes {
+      margin-left: 10px;
+    }
+    footer .cta {
+      margin-left: auto;
+    }
+    footer .cta button {
+      border: 0;
+      background: transparent;
+    }
+  </style>
+  <header>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+    <div class="profile-name">
+      <h3>Quincy Larson</h3>
+      <h4>@ossia</h4>
+    </div>
+    <div class="follow-btn">
+      <button>Follow</button>
+    </div>
+  </header>
+  <div id="inner">
+    <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+    <span class="date">1:32 PM - 12 Jan 2018</span>
+    <hr>
+  </div>
+  <footer>
+    <div class="stats">
+      <div class="Retweets">
+        <strong>107</strong> Retweets
+      </div>
+      <div class="likes">
+        <strong>431</strong> Likes
+      </div>
+    </div>
+    <div class="cta">
+      <button class="share-btn">Share</button>
+      <button class="retweet-btn">Retweet</button>
+      <button class="like-btn">Like</button>
+    </div>
+  </footer>
+<!--11 CSS Flexbox: Use the flex-wrap Property to Wrap a Row or Column
+ -->
+ <!-- The current layout has too many boxes for one row. Add the CSS property flex-wrap to the #box-container element, and give it a value of wrap.
+ -->
+ <style>
+    #box-container {
+      background: gray;
+      display: flex;
+      height: 100%;
+  
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 25%;
+      height: 50%;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 25%;
+      height: 50%;
+    }
+    #box-3 {
+      background-color: violet;
+      width: 25%;
+      height: 50%;
+    }
+    #box-4 {
+      background-color: yellow;
+      width: 25%;
+      height: 50%;
+    }
+    #box-5 {
+      background-color: green;
+      width: 25%;
+      height: 50%;
+    }
+    #box-6 {
+      background-color: black;
+      width: 25%;
+      height: 50%;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+    <div id="box-3"></div>
+    <div id="box-4"></div>
+    <div id="box-5"></div>
+    <div id="box-6"></div>
+  </div>
+
+<!-- 12 CSS Flexbox: Use the flex-shrink Property to Shrink Items
+-->
+<!-- Add the CSS property flex-shrink to both #box-1 and #box-2. Give #box-1 a value of 1 and #box-2 a value of 2.
+ -->
+ <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      width: 100%;
+      height: 200px;
+  
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      width: 100%;
+      height: 200px;
+  
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+
+  <!-- 13 CSS Flexbox: Use the flex-grow Property to Expand Items
+-->
+<!-- Add the CSS property flex-grow to both #box-1 and #box-2. Give #box-1 a value of 1 and #box-2 a value of 2.
+
+ -->
+ <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+  
+    #box-1 {
+      background-color: dodgerblue;
+      height: 200px;
+  
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      height: 200px;
+  
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!-- 14 CSS Flexbox: Use the flex-basis Property to Set the Initial Size of an Item
+-->
+<!-- Set the initial size of the boxes using flex-basis. Add the CSS property flex-basis to both #box-1 and #box-2. Give #box-1 a value of 10em and #box-2 a value of 20em.
+
+ -->
+ <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+  
+    #box-1 {
+      background-color: dodgerblue;
+      height: 200px;
+  
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      height: 200px;
+  
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+  <!-- 15 CSS Flexbox: Use the flex Shorthand Property
+-->
+<!-- Add the CSS property flex to both #box-1 and #box-2. Give #box-1 the values so its flex-grow is 2, its flex-shrink is 2, and its flex-basis is 150px. Give #box-2 the values so its flex-grow is 1, its flex-shrink is 1, and its flex-basis is 150px.
+
+These values will cause #box-1 to grow to fill the extra space at twice the rate of #box-2 when the container is greater than 300px and shrink at twice the rate of #box-2 when the container is less than 300px. 300px is the combined size of the flex-basis values of the two boxes. -->
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+  
+      height: 200px;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+  
+      height: 200px;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!-- 16 CSS Flexbox: Use the order Property to Rearrange Items
+-->
+<!-- Add the CSS property order to both #box-1 and #box-2. Give #box-1 a value of 2 and give #box-2 a value of 1.
+ -->
+ <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+  
+      height: 200px;
+      width: 200px;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+  
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+  <!-- 17 CSS Flexbox: Use the align-self Property
+-->
+<!-- Add the CSS property align-self to both #box-1 and #box-2. Give #box-1 a value of center and give #box-2 a value of flex-end.
+ -->
+ <style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+  
+      height: 200px;
+      width: 200px;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+  
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>
+
+</body>
+</html>
